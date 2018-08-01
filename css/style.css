@@ -296,6 +296,10 @@ a:hover {
   margin-bottom: 65px;
 }
 
+.b-headerBooking__site_size_sm {
+  margin-bottom: 30px;
+}
+
 .b-headerBooking__image {
   display: block;
   max-width: 826px;
