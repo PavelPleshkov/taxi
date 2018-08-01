@@ -1,0 +1,331 @@
+*, p, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: #505050;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.container-fluid {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  padding: 0;
+}
+
+.header {
+  width: 100%;
+  background-image: url(../img/headerBackground.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.headerContainer {
+  padding: 35px 30px 0;
+}
+
+@media (max-width: 991px) {
+  .headerContainer {
+    padding: 20px 20px 0;
+  }
+}
+
+.b-headerMenu:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.b-headerMenuTitle {
+  width: auto;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .b-headerMenuTitle_size_lg {
+    float: left;
+    margin-top: 7px;
+  }
+}
+
+@media (max-width: 991px) {
+  .b-headerMenuTitle_size_md {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-headerMenuTitle_size_xs {
+    float: left;
+    position: absolute;
+  }
+}
+
+.b-headerMenuTitle__link {
+  width: auto;
+  display: block;
+  color: inherit;
+  line-height: 30px;
+  transition: .3s;
+}
+
+.b-headerMenuTitle__link:hover {
+  color: #ffc61a;
+}
+
+.b-headerMenuTitle__link:hover > * {
+  color: #ffc61a;
+}
+
+.b-headerMenuTitle__decorate {
+  display: inline-block;
+  color: #daa504;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+
+.b-headerMenuTitle__txt {
+  display: block;
+  font-size: 15px;
+  text-transform: uppercase;
+  line-height: 11px;
+  margin-top: 11px;
+}
+
+.b-headerMenuList {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 992px) {
+  .b-headerMenuList_size_lg {
+    float: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .b-headerMenuList_size_sm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    grid-auto-rows: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-headerMenuList_size_xs {
+    display: none;
+  }
+}
+
+.b-headerMenuList__item {
+  width: auto;
+  display: block;
+  font-size: 17px;
+  font-weight: 900;
+  text-align: center;
+  color: #fff;
+  line-height: 34px;
+  padding: 0 15px;
+  border-radius: 17px;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.b-headerMenuList__item:hover {
+  color: #ffc61a;
+  border: 1px solid #ffc61a;
+}
+
+@media (max-width: 767px) {
+  .b-headerMenuList__item_size_sm {
+    width: auto;
+    margin: auto;
+  }
+}
+
+.b-headerMenuList__item_current {
+  color: #010101;
+  background-color: #ffc61a;
+}
+
+.b-headerMenuList__item_current:hover {
+  color: #fff;
+}
+
+.pos-f-t {
+  display: none;
+}
+
+.pos-f-t .navbar {
+  justify-content: flex-end;
+}
+
+.pos-f-t .navbar-dark .navbar-toggler {
+  border-color: #ffc61a;
+}
+
+@media (max-width: 575px) {
+  .pos-f-t {
+    float: right;
+    display: block;
+    width: 100%;
+  }
+}
+
+.pos-f-t .p-4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.pos-f-t .p-4 img {
+  display: block;
+  flex-shrink: 1;
+  width: 100%;
+  max-width: 350px;
+  order: 2;
+  align-self: flex-start;
+}
+
+.pos-f-t .p-4 .b-headerMenuList {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 15px;
+  flex-shrink: 0;
+}
+
+.b-headerBooking {
+  color: #fff;
+  font-weight: 900;
+}
+
+.b-headerBooking_center {
+  margin: 60px auto 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .b-headerBooking_center {
+    margin: 40px auto 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-headerBooking_center {
+    margin-top: 20px;
+  }
+}
+
+.b-headerBooking__title {
+  color: #ffc61a;
+  font-size: 36px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.b-headerBooking__title_center {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 575px) {
+  .b-headerBooking__title_size_xs {
+    font-size: 24px;
+  }
+}
+
+.b-headerBooking__tel, .b-headerBooking__site {
+  display: block;
+}
+
+.b-headerBooking__tel {
+  font-size: 72px;
+  line-height: 55px;
+}
+
+.b-headerBooking__tel_center {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .b-headerBooking__tel_size_sm {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-headerBooking__tel_size_xs {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.b-headerBooking__site {
+  font-size: 20px;
+  line-height: 15px;
+}
+
+.b-headerBooking__site_center {
+  margin-bottom: 65px;
+}
+
+.b-headerBooking__image {
+  display: block;
+  max-width: 826px;
+  width: 70%;
+}
+
+@media (max-width: 767px) {
+  .b-headerBooking__image {
+    width: 90%;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-headerBooking__image {
+    display: none;
+  }
+}
+
+.b-headerBooking__image_center {
+  margin-bottom: -115px;
+  position: relative;
+  z-index: 1;
+}
+
+.main {
+  background-color: #fff;
+  height: 500px;
+}
+
+.footer {
+  background-color: #c6cc71;
+}

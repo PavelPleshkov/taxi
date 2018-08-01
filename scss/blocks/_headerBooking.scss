@@ -1,0 +1,96 @@
+.b-headerBooking {
+	color: #fff;
+	font-weight: 900;
+
+	&_center {
+		margin: 60px auto 0;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (max-width: 767px) {
+			margin: 40px auto 0;
+		}
+
+		@media (max-width: 575px) {
+			margin-top: 20px;
+		}
+	}
+
+	&__title {
+		color:  $mainColor;
+		font-size: 36px;
+		line-height: 26px;
+		text-transform: uppercase;
+		
+		&_center {
+			margin-bottom: 20px;
+		}
+
+		&_size_xs {
+			@media (max-width: 575px) {
+				font-size: 24px;
+			}
+		}
+
+
+	}
+
+	&__tel,
+	&__site {
+		display: block;
+	}
+
+	&__tel {
+		font-size: 72px;
+		line-height: 55px;
+
+		&_center {
+			margin-bottom: 30px;
+		}
+
+		&_size_sm {
+			@media (max-width: 767px) {
+				font-size: 55px;
+			}
+		}
+
+		&_size_xs {
+			@media (max-width: 575px) {
+				font-size: 36px;
+				line-height: 36px;
+			}
+		}
+	}
+
+	&__site {
+		font-size: 20px;
+		line-height: 15px;
+
+		&_center {
+			margin-bottom: 65px;
+		}
+	}
+
+	&__image {
+		display: block;
+		max-width: 826px;
+		width: 70%;
+
+		@media (max-width: 767px) {
+			width: 90%;
+		}
+
+		@media (max-width: 575px) {
+			display: none;
+		}
+
+		&_center {
+			// margin: 0 auto;
+			margin-bottom: -115px;
+			position: relative;
+			z-index: 1;
+		}
+	}
+}

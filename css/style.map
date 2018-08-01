@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss"
+	],
+	"sourcesContent": [
+		"html,\r\nbody {\r\n\theight: 100%;\r\n}\r\n\r\nbody {\r\n\tbackground: #1f1f1f;\r\n}\r\n\r\na:hover {\r\n\ttext-decoration: none;\r\n}\r\n\r\n.header {\r\n\tbackground-color: #b97e7e;\r\n}\r\n\r\n.main {\r\n\r\n}\r\n\r\n.footer {\r\n\t\r\n}"
+	],
+	"mappings": ";;AAAA,AAAA,IAAI;AACJ,AAAA,IAAI,CAAC;EACJ,MAAM,EAAE,IAAK;CACb;;;AAED,AAAA,IAAI,CAAC;EACJ,UAAU,EAAE,OAAQ;CACpB;;;AAED,AAAC,CAAA,AAAA,MAAM,CAAC;EACP,eAAe,EAAE,IAAK;CACtB;;;AAED,AAAA,OAAO,CAAC;EACP,gBAAgB,EAAE,OAAQ;CAC1B",
+	"names": []
+}
