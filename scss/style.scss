@@ -1,7 +1,7 @@
 $mainFont: 'Lato', sans-serif;
 $mainColor: #ffc61a;
 
-*, p, h1, h2, h3, h4 {
+*, p, h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
 }
@@ -49,61 +49,62 @@ a {
 			padding: 20px 20px 0;
 		}
 	}
-}
-
-@import "blocks/_headerMenu";
-
-.pos-f-t {
-	display: none;
 	
-	.navbar {
-		justify-content: flex-end;
-	}
+	@import "blocks/_headerMenu";
 
-	.navbar-dark .navbar-toggler {
-		border-color: $mainColor;
-	}
+	.pos-f-t {
+		display: none;
+		
+		.navbar {
+			justify-content: flex-end;
+		}
 
-	@media (max-width: 575px) {
-		float: right;
-		display: block;
-		width: 100%;
+		.navbar-dark .navbar-toggler {
+			border-color: $mainColor;
+		}
 
-	}
-
-	.p-4 {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		justify-content: flex-end;
-		flex-wrap: wrap;
-		align-items: flex-end;
-
-		img {
+		@media (max-width: 575px) {
+			float: right;
 			display: block;
-			flex-shrink: 1;
 			width: 100%;
-			max-width: 350px;
-			order: 2;
-			align-self: flex-start;
 		}
 
-		.b-headerMenuList {
-			display: grid;
-			grid-template-columns: 1fr;
-			grid-gap: 15px;
-			flex-shrink: 0;
+		.p-4 {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			align-items: flex-end;
+
+			img {
+				display: block;
+				flex-shrink: 1;
+				width: 100%;
+				max-width: 350px;
+				order: 2;
+				align-self: flex-start;
+			}
+
+			.b-headerMenuList {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-gap: 15px;
+				flex-shrink: 0;
+			}
 		}
 	}
-}
 
-@import "blocks/_headerBooking";
+	@import "blocks/_headerBooking";
+}
 
 .main {
 	background-color: #fff;
-	height: 500px;
+
+	@import "blocks/_mainDiscribe";
 }
 
 .footer {
+	height: 500px;
 	background-color: rgb(198, 204, 113);
 }

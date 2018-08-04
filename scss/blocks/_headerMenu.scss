@@ -47,6 +47,7 @@
 				
 				&>* {
 					color: $mainColor;
+					transition: inherit;
 				}
 			}
 		}
@@ -64,6 +65,13 @@
 			text-transform: uppercase;
 			line-height: 11px;
 			margin-top: 11px;
+			letter-spacing: 3px;
+
+			&_size_xs {
+				@media (max-width: 575px) {
+					letter-spacing: 2px;
+				}
+			}
 		}
 	}
 
@@ -120,6 +128,12 @@
 				@media (max-width: 767px) {
 					width: auto;
 					margin: auto;
+				}
+			}
+
+			&_size_lg {
+				@media (min-width: 992px) {
+					margin-left: 5px;
 				}
 			}
 

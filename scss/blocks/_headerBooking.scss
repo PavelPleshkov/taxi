@@ -45,6 +45,13 @@
 	&__tel {
 		font-size: 72px;
 		line-height: 55px;
+		transition: .3s;
+
+		&:hover {
+			// color: $mainColor;
+			color: inherit;
+			transform: scale(1.05, 1);
+		}
 
 		&_center {
 			margin-bottom: 30px;
@@ -52,13 +59,13 @@
 
 		&_size_sm {
 			@media (max-width: 767px) {
-				font-size: 55px;
+				font-size: 46px;
 			}
 		}
 
 		&_size_xs {
 			@media (max-width: 575px) {
-				font-size: 36px;
+				font-size: 32px;
 				line-height: 36px;
 			}
 		}
@@ -67,13 +74,33 @@
 	&__site {
 		font-size: 20px;
 		line-height: 15px;
+		font-variant: small-caps;
+		letter-spacing: 5px;
+		// text-transform: uppercase;
+		transition: .3s;
+
+		&:hover {
+			// text-decoration: underline;
+			// text-decoration-style: dotted;
+			color: $mainColor;
+		}
 
 		&_center {
 			margin-bottom: 65px;
 		}
 
-		&_size_sm {
-			margin-bottom: 30px
+		&_size {
+			&_sm {
+				@media (max-width: 767px) {
+					margin-bottom: 30px;
+				}
+			}
+
+			&_xs {
+				@media (max-width: 575px) {
+					letter-spacing: normal;
+				}
+			}
 		}
 	}
 
