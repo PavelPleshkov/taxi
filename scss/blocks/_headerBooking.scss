@@ -23,6 +23,7 @@
 		font-size: 36px;
 		line-height: 26px;
 		text-transform: uppercase;
+		text-shadow: 10px 10px 5px #000;
 		
 		&_center {
 			margin-bottom: 20px;
@@ -40,6 +41,12 @@
 	&__tel,
 	&__site {
 		display: block;
+		text-shadow: 10px 10px 5px #000;
+
+		// &:active {
+		// 	transform: scale(0.95, 0.95);
+		// 	text-shadow: 5px 5px 5px #000;
+		// }
 	}
 
 	&__tel {
@@ -51,6 +58,13 @@
 			// color: $mainColor;
 			color: inherit;
 			transform: scale(1.05, 1);
+			transition: .3s;
+		}
+
+		&:active {
+			transform: scale(0.95, 0.95);
+			text-shadow: 5px 5px 5px #000;
+			transition: 0s;
 		}
 
 		&_center {
@@ -83,6 +97,13 @@
 			// text-decoration: underline;
 			// text-decoration-style: dotted;
 			color: $mainColor;
+			transition: .3s;
+		}
+
+		&:active {
+			transform: scale(0.95, 0.95);
+			text-shadow: 5px 5px 5px #000;
+			transition: 0s;
 		}
 
 		&_center {

@@ -41,15 +41,22 @@
 			color: inherit;
 			line-height: 30px;
 			transition: .3s;
-			text-shadow: 15px 15px 2px #000;
+			text-shadow: 10px 10px 5px #000;
 			
 			&:hover {
 				color: $mainColor;
+				transition: .3s;
 				
 				&>* {
 					color: $mainColor;
 					transition: inherit;
 				}
+			}
+
+			&:active {
+				transform: scale(0.95, 0.95);
+				text-shadow: 5px 5px 5px #000;
+				transition: 0s;
 			}
 		}
 		
@@ -118,11 +125,22 @@
 			border-radius: 17px;
 			border: 1px solid transparent;
 			text-transform: uppercase;
-			transition: 0.5s;
+			transition: .3s;
+			// text-shadow: 10px 10px 0 #000;
+			box-shadow: 10px 10px 5px #000;
+			background-color: rgba(0, 0, 0, 0.5);
 
 			&:hover {
 				color: $mainColor;
 				border: 1px solid $mainColor;
+				transition: .3s;
+			}
+
+			&:active {
+				transform: scale(0.95, 0.95);
+				text-shadow: none;
+				box-shadow: 5px 5px 5px #000;
+				transition: 0s;
 			}
 
 			&_size_sm {
@@ -141,6 +159,7 @@
 			&_current {
 				color: #010101;
 				background-color: $mainColor;
+				text-shadow: none;
 
 				&:hover {
 					color: #fff;
