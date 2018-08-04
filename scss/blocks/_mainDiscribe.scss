@@ -195,11 +195,12 @@
 			outline: $mainColor;
 			border: none;
 			border-bottom: 3px solid #e4e4e4;
+			caret-color: #000;
 
 			&_date,
 			&_time {
 				color: rgba(0, 0, 0, 0.68);
-				
+
 				&::before {
 					content: attr(placeholder) !important;
 					display: block;
