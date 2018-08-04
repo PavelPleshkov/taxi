@@ -521,7 +521,7 @@ a:hover {
   min-height: 30px;
   margin-top: 20px;
   padding: 0;
-  color: rgba(0, 0, 0, 0.68) !important;
+  color: rgba(0, 0, 0, 0.68);
   font-size: 20px;
   line-height: 30px;
   font-weight: 600;
@@ -533,7 +533,8 @@ a:hover {
 
 .main .b-mainDiscribeBooking__item_date::before, .main .b-mainDiscribeBooking__item_time::before {
   content: attr(placeholder) !important;
-  display: inline;
+  display: block;
+  float: left;
   color: rgba(0, 0, 0, 0.68);
   font-size: 20px;
   font-weight: 600;

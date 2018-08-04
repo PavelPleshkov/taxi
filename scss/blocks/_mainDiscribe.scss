@@ -187,7 +187,7 @@
 			// margin-right: 10px;
 			// color: #000;
 			// color: red;
-			color: rgba(0, 0, 0, 0.68) !important;
+			color: rgba(0, 0, 0, 0.68);
 			font-size: 20px;
 			line-height: 30px;
 			font-weight: 600;
@@ -200,7 +200,8 @@
 			&_time {
 				&::before {
 					content: attr(placeholder) !important;
-					display: inline;
+					display: block;
+					float: left;
 					color: rgba(0, 0, 0, 0.68);
 					font-size: 20px;
 					font-weight: 600;
