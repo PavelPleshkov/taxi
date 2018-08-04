@@ -531,6 +531,10 @@ a:hover {
   border-bottom: 3px solid #e4e4e4;
 }
 
+.main .b-mainDiscribeBooking__item_date, .main .b-mainDiscribeBooking__item_time {
+  color: rgba(0, 0, 0, 0.68);
+}
+
 .main .b-mainDiscribeBooking__item_date::before, .main .b-mainDiscribeBooking__item_time::before {
   content: attr(placeholder) !important;
   display: block;

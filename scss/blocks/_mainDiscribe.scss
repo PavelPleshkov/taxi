@@ -198,6 +198,8 @@
 
 			&_date,
 			&_time {
+				color: rgba(0, 0, 0, 0.68);
+				
 				&::before {
 					content: attr(placeholder) !important;
 					display: block;
