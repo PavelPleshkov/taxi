@@ -128,7 +128,7 @@
 					text-shadow: 0px 0px 50px $mainColor;
 					// text-shadow: 0px 0px 60px #fff;
 					border-color: transparent;
-					filter: opacity(1) blur(0px);
+					// filter: opacity(1) blur(0px);
 
 				}
 				to {
@@ -137,7 +137,7 @@
 					// text-shadow: 0px 0px 5px $mainColor;
 					border-color: $mainColor;
 					border-color: rgba(255, 198, 26, 0.5);
-					filter: opacity(0.9) blur(0.7px);
+					// filter: opacity(0.9) blur(0.7px);
 
 				}
 			}
