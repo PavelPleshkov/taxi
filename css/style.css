@@ -544,6 +544,7 @@ a:hover {
 
 .main .b-mainDiscribeBooking__item_date:focus::before, .main .b-mainDiscribeBooking__item_date:valid::before, .main .b-mainDiscribeBooking__item_time:focus::before, .main .b-mainDiscribeBooking__item_time:valid::before {
   content: "";
+  display: none;
 }
 
 .main .b-mainDiscribeBooking__item:placeholder {

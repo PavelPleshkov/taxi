@@ -203,15 +203,17 @@
 					display: block;
 					float: left;
 					color: rgba(0, 0, 0, 0.68);
+					// color: red;
 					font-size: 20px;
 					font-weight: 600;
 					text-align: left;
 					margin-right: 10px;
 				}
-			
+
 				&:focus::before,
 				&:valid::before {
 					content: "";
+					display: none;
 				}
 			}
 
