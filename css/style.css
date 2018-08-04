@@ -87,6 +87,7 @@ a:hover {
   color: inherit;
   line-height: 30px;
   transition: .3s;
+  text-shadow: 15px 15px 2px #000;
 }
 
 .header .b-headerMenuTitle__link:hover {
@@ -441,6 +442,16 @@ a:hover {
   font-weight: 400;
   text-align: center;
   padding: 12px 35px;
+  box-shadow: 5px 5px 40px 0 #000;
+}
+
+.main .b-mainDiscribeInfo__btn:hover {
+  color: #ffc61a;
+}
+
+.main .b-mainDiscribeInfo__btn:active {
+  box-shadow: none;
+  transform: scale(0.95, 0.95);
 }
 
 .main .b-mainDiscribeBooking {
@@ -464,9 +475,9 @@ a:hover {
   text-align: center;
   padding: 25px 20px;
   text-transform: uppercase;
-  text-shadow: 0 0 5px #fff;
   border: 6px solid #ffc61a;
   border-radius: 20px;
+  box-shadow: 5px 5px 40px 0 #000;
   animation-name: glowingTitle;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -489,7 +500,6 @@ a:hover {
 
 .main .b-mainDiscribeBooking__decorate {
   color: #ffc61a;
-  text-shadow: 0px 0px 15px #82dbe7;
   animation-name: glowingDecorate;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -513,6 +523,7 @@ a:hover {
 
 .main .b-mainDiscribeBooking__form {
   padding: 0 20px 20px;
+  margin-top: 30px;
 }
 
 .main .b-mainDiscribeBooking__item {
@@ -530,10 +541,7 @@ a:hover {
   border: none;
   border-bottom: 3px solid #e4e4e4;
   caret-color: #000;
-}
-
-.main .b-mainDiscribeBooking__item_date, .main .b-mainDiscribeBooking__item_time {
-  color: rgba(0, 0, 0, 0.68);
+  background-color: transparent;
 }
 
 .main .b-mainDiscribeBooking__item_date::before, .main .b-mainDiscribeBooking__item_time::before {
@@ -552,8 +560,8 @@ a:hover {
   display: none;
 }
 
-.main .b-mainDiscribeBooking__item:placeholder {
-  color: inherit;
+.main .b-mainDiscribeBooking__item::placeholder {
+  color: rgba(0, 0, 0, 0.68);
   font-size: 20px;
   font-weight: 600;
   text-align: left;
@@ -576,6 +584,17 @@ a:hover {
   text-align: center;
   padding: 12px 0;
   border-radius: 7px;
+  box-shadow: 5px 5px 40px 0 #000;
+  outline: none;
+}
+
+.main .b-mainDiscribeBooking__btn:hover {
+  color: #ffc61a;
+}
+
+.main .b-mainDiscribeBooking__btn:active {
+  box-shadow: none;
+  transform: scale(0.95, 0.95);
 }
 
 .footer {
