@@ -57,6 +57,13 @@ a {
 		
 		.navbar {
 			justify-content: flex-end;
+			// float: right;
+
+			// &::after {
+			// 	content: '';
+			// 	display: block;
+			// 	clear: both;
+			// }
 		}
 
 		.navbar-dark .navbar-toggler {

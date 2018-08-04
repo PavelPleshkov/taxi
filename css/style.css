@@ -78,6 +78,7 @@ a:hover {
   .header .b-headerMenuTitle_size_xs {
     float: left;
     position: absolute;
+    z-index: 2;
   }
 }
 
