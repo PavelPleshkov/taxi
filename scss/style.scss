@@ -61,6 +61,20 @@ a {
 
 		.navbar-dark .navbar-toggler {
 			border-color: $mainColor;
+			box-shadow: 10px 10px 5px 0 #000;
+			transition: .3s;
+			outline: none;
+
+			&:hover {
+				border-color: #fff;
+				transition: .3s;
+			}
+
+			&:active {
+				transform: scale(0.95, 0.95);
+				box-shadow: 5px 5px 5px #000;
+				transition: 0s;
+			}
 		}
 
 		@media (max-width: 575px) {

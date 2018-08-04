@@ -217,6 +217,20 @@ a:hover {
 
 .header .pos-f-t .navbar-dark .navbar-toggler {
   border-color: #ffc61a;
+  box-shadow: 10px 10px 5px 0 #000;
+  transition: .3s;
+  outline: none;
+}
+
+.header .pos-f-t .navbar-dark .navbar-toggler:hover {
+  border-color: #fff;
+  transition: .3s;
+}
+
+.header .pos-f-t .navbar-dark .navbar-toggler:active {
+  transform: scale(0.95, 0.95);
+  box-shadow: 5px 5px 5px #000;
+  transition: 0s;
 }
 
 @media (max-width: 575px) {
