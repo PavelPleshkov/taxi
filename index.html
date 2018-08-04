@@ -112,26 +112,30 @@
 									<form class="b-mainDiscribeBooking__form" action="index.html" method="POST">
 										<input class="b-mainDiscribeBooking__item" type="text" placeholder="Name" required>
 										<input class="b-mainDiscribeBooking__item" type="tel" placeholder="Phone" required>
-										<input class="b-mainDiscribeBooking__item " type="date" placeholder="When">
-										<input class="b-mainDiscribeBooking__item " type="time" placeholder="Time">
+										<!-- <input class="b-mainDiscribeBooking__item b-mainDiscribeBooking__item_date" type="date" placeholder="When"> -->
+										<input class="b-mainDiscribeBooking__item" placeholder="When" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+										<!-- <input class="b-mainDiscribeBooking__item b-mainDiscribeBooking__item
+										b-mainDiscribeBooking__item_time" type="time" placeholder="Time"> -->
+										<input class="b-mainDiscribeBooking__item" placeholder="Time" type="text" onfocus="(this.type='time')" onblur="(this.type='text')">
 										<input class="b-mainDiscribeBooking__item" type="text" placeholder="Start">
 										<input class="b-mainDiscribeBooking__item" type="text" placeholder="End">
-										<input class="b-mainDiscribeBooking__item" placeholder="Choose Vehicle" list="vehicle-list">
+										<!-- <input class="b-mainDiscribeBooking__item" placeholder="Choose Vehicle" list="vehicle-list">
 										<datalist id="vehicle-list">
 											<option value="BMW"></option>
 											<option value="Mercedes"></option>
 											<option value="Toyota"></option>
 											<option value="Ford"></option>
 											<option value="Buick"></option>
-										</datalist>
-										<!-- <select id="vehicle">
-											<option value="no choice" disabled>Choose Vehicle</option>
-											<option value="BMW">BMW</option>
-											<option value="Mercedes">Mercedes</option>
-											<option value="Toyota">Toyota</option>
-											<option value="Ford">Ford</option>
-											<option value="Buick">Buick</option>
-										</select> -->
+										</datalist> -->
+										<select class="b-mainDiscribeBooking__item">
+											<option value="no choice" disabled selected>Choose Vehicle</option>
+											<option class="b-mainDiscribeBooking__choice" value="any">Any</option>
+											<option class="b-mainDiscribeBooking__choice" value="BMW">BMW</option>
+											<option class="b-mainDiscribeBooking__choice" value="Mercedes">Mercedes</option>
+											<option class="b-mainDiscribeBooking__choice" value="Toyota">Toyota</option>
+											<option class="b-mainDiscribeBooking__choice" value="Ford">Ford</option>
+											<option class="b-mainDiscribeBooking__choice" value="Buick">Buick</option>
+										</select>
 										<input class="b-mainDiscribeBooking__btn" type="submit" value="Submit">
 									</form>
 								</div>
