@@ -29,7 +29,7 @@
 
 			&_xs {
 				@media (max-width: 575px) {
-					float: left;
+					// float: left;
 					position: absolute;
 					z-index: 2;
 				}
@@ -89,6 +89,13 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 
+		&_mobile {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-gap: 15px;
+			flex-shrink: 0;
+		}
+
 		&_size {
 			&_lg {
 				@media (min-width: 992px){
@@ -146,8 +153,14 @@
 
 			&_size_sm {
 				@media (max-width: 767px) {
-					width: auto;
 					margin: auto;
+				}
+			}
+
+			&_size_xs {
+				@media (max-width: 575px) {
+					margin: auto;
+					margin-right: 0;
 				}
 			}
 
@@ -167,5 +180,15 @@
 				}
 			}
 		}
+	}
+
+	&__image {
+		display: block;
+		flex-shrink: 1;
+		width: 100%;
+		max-width: 350px;
+		order: 2;
+		align-self: flex-start;
+		margin-top: 15px;
 	}
 }

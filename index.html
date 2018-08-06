@@ -51,24 +51,24 @@
 						</nav>
 						<div class="collapse" id="navbarToggleExternalContent">
 							<div class="p-4">
-								<img src="img/taxi.png" alt="Taxi">
-								<nav class="b-headerMenuList b-headerMenuList_size_lg b-headerMenuList_size_sm b-headerMenuList_size_xs">
-									<a class="b-headerMenuList__item b-headerMenuList__item_current b-headerMenuList__item_size_sm b-headerMenuList__item_size_lg" href="index.html">
+								<img class="b-headerMenu__image" src="img/taxi.png" alt="Taxi">
+								<nav class="b-headerMenuList b-headerMenuList_mobile">
+									<a class="b-headerMenuList__item b-headerMenuList__item_current b-headerMenuList__item_size_xs" href="index.html">
 										Home
 									</a>
-									<a class="b-headerMenuList__item b-headerMenuList__item_size_sm b-headerMenuList__item_size_lg" href="#">
+									<a class="b-headerMenuList__item b-headerMenuList__item_size_xs" href="#">
 										About
 									</a>
-									<a class="b-headerMenuList__item b-headerMenuList__item_size_sm b-headerMenuList__item_size_lg" href="#">
+									<a class="b-headerMenuList__item b-headerMenuList__item_size_xs" href="#">
 										Features
 									</a>
-									<a class="b-headerMenuList__item b-headerMenuList__item_size_sm b-headerMenuList__item_size_lg" href="#">
+									<a class="b-headerMenuList__item b-headerMenuList__item_size_xs" href="#">
 										Blog
 									</a>
-									<a class="b-headerMenuList__item b-headerMenuList__item_size_sm b-headerMenuList__item_size_lg" href="#">
+									<a class="b-headerMenuList__item b-headerMenuList__item_size_xs" href="#">
 										Order now
 									</a>
-									<a class="b-headerMenuList__item b-headerMenuList__item_size_sm b-headerMenuList__item_size_lg" href="#">
+									<a class="b-headerMenuList__item b-headerMenuList__item_size_xs" href="#">
 										Contacts
 									</a>
 								</nav>
@@ -91,61 +91,62 @@
 		</header>
 
 		<main class="main">
-			
-				<section class="b-mainDiscribe">
-					<div class="container b-mainDiscribeContainer b-mainDiscribeContainer_size_md b-mainDiscribeContainer_size_xs">
-						<div class="row">
-							<div class="b-mainDiscribeInfo b-mainDiscribeInfo_size_xs col-lg-7">
-								<h2 class="b-mainDiscribeInfo__title b-mainDiscribeInfo__title_top"><span class="b-mainDiscribeInfo__best b-mainDiscribeInfo__best_top">
-									Best in city</span>Trusted cab service in New&nbsp;York
-								</h2>
-								<p class="b-mainDiscribeInfo__txt b-mainDiscribeInfo__txt_middle">
-									Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque saepe sequi quisquam est, nobis laborum animi modi cupiditate asperiores, soluta tempore nesciunt mollitia voluptatum quaerat aliquid pariatur tenetur. Asperiores reiciendis expedita ab, in explicabo ratione aut, dolores sed hic placeat vel omnis odit. Aliquid, esse?
-								</p>
-								<a class="b-mainDiscribeInfo__btn" href="#">Read more</a>
-							</div>
-							<div class="offset-lg-1 col-lg-4">
-								<div class="b-mainDiscribeBooking b-mainDiscribeBooking_size_md">
-									<h2 class="b-mainDiscribeBooking__title">
-										Book a <span class="b-mainDiscribeBooking__decorate">cab</span>
-									</h2>
-									<form class="b-mainDiscribeBooking__form" action="index.html" method="POST">
-										<input class="b-mainDiscribeBooking__item" type="text" placeholder="Name" required>
-										<input class="b-mainDiscribeBooking__item" type="tel" placeholder="Phone" required>
-										<input class="b-mainDiscribeBooking__item b-mainDiscribeBooking__item_date" type="date" placeholder="When" required>
-										<!-- <input class="b-mainDiscribeBooking__item" placeholder="When" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"> -->
-										<input class="b-mainDiscribeBooking__item b-mainDiscribeBooking__item
-										b-mainDiscribeBooking__item_time" type="time" placeholder="Time" required>
-										<!-- <input class="b-mainDiscribeBooking__item" placeholder="Time" type="text" onfocus="(this.type='time')" onblur="(this.type='text')"> -->
-										<input class="b-mainDiscribeBooking__item" type="text" placeholder="Start">
-										<input class="b-mainDiscribeBooking__item" type="text" placeholder="End">
-										<!-- <input class="b-mainDiscribeBooking__item" placeholder="Choose Vehicle" list="vehicle-list">
-										<datalist id="vehicle-list">
-											<option value="BMW"></option>
-											<option value="Mercedes"></option>
-											<option value="Toyota"></option>
-											<option value="Ford"></option>
-											<option value="Buick"></option>
-										</datalist> -->
-										<select class="b-mainDiscribeBooking__item">
-											<option value="no choice" disabled selected>Choose Vehicle</option>
-											<option class="b-mainDiscribeBooking__choice" value="any">Any</option>
-											<option class="b-mainDiscribeBooking__choice" value="BMW">BMW</option>
-											<option class="b-mainDiscribeBooking__choice" value="Mercedes">Mercedes</option>
-											<option class="b-mainDiscribeBooking__choice" value="Toyota">Toyota</option>
-											<option class="b-mainDiscribeBooking__choice" value="Ford">Ford</option>
-											<option class="b-mainDiscribeBooking__choice" value="Buick">Buick</option>
-										</select>
-										<input class="b-mainDiscribeBooking__btn" type="submit" value="Submit">
-									</form>
-								</div>
-							</div>
-							
+			<section class="b-mainDiscribe">
+				<div class="container b-mainDiscribeContainer b-mainDiscribeContainer_size_md b-mainDiscribeContainer_size_xs">
+					<div class="row no-gutters">
+						<div class="b-mainDiscribeInfo b-mainDiscribeInfo_size_xs col-lg-7">
+							<h2 class="b-mainDiscribeInfo__title b-mainDiscribeInfo__title_top b-mainDiscribeInfo__title_size_md b-mainDiscribeInfo__title_size_sm"><span class="b-mainDiscribeInfo__best b-mainDiscribeInfo__best_top b-mainDiscribeInfo__best_size_sm">
+								Best in city</span>Trusted cab service in New&nbsp;York
+							</h2>
+							<p class="b-mainDiscribeInfo__txt b-mainDiscribeInfo__txt_size_md b-mainDiscribeInfo__txt_middle">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque saepe sequi quisquam est, nobis laborum animi modi cupiditate asperiores, soluta tempore nesciunt mollitia voluptatum quaerat aliquid pariatur tenetur. Asperiores reiciendis expedita ab, in explicabo ratione aut, dolores sed hic placeat vel omnis odit. Aliquid, esse?
+							</p>
+							<a class="b-mainDiscribeInfo__btn" href="#">Read more</a>
 						</div>
-					
+						<div class="offset-lg-1 col-lg-4">
+							<div class="b-mainDiscribeBooking b-mainDiscribeBooking_size_md">
+								<h2 class="b-mainDiscribeBooking__title">
+									Book a <span class="b-mainDiscribeBooking__decorate">cab</span>
+								</h2>
+								<form class="b-mainDiscribeBooking__form" action="index.html" method="POST">
+									<input class="b-mainDiscribeBooking__item" type="text" placeholder="Name" required>
+									<input class="b-mainDiscribeBooking__item" type="tel" placeholder="Phone" required>
+									<input class="b-mainDiscribeBooking__item b-mainDiscribeBooking__item_date" type="date" placeholder="When" required>
+									<!-- <input class="b-mainDiscribeBooking__item" placeholder="When" type="text" onfocus="(this.type='date')" onblur="(this.type='text')"> -->
+									<input class="b-mainDiscribeBooking__item b-mainDiscribeBooking__item
+									b-mainDiscribeBooking__item_time" type="time" placeholder="Time" required>
+									<!-- <input class="b-mainDiscribeBooking__item" placeholder="Time" type="text" onfocus="(this.type='time')" onblur="(this.type='text')"> -->
+									<input class="b-mainDiscribeBooking__item" type="text" placeholder="Start">
+									<input class="b-mainDiscribeBooking__item" type="text" placeholder="End">
+									<!-- <input class="b-mainDiscribeBooking__item" placeholder="Choose Vehicle" list="vehicle-list">
+									<datalist id="vehicle-list">
+										<option value="BMW"></option>
+										<option value="Mercedes"></option>
+										<option value="Toyota"></option>
+										<option value="Ford"></option>
+										<option value="Buick"></option>
+									</datalist> -->
+									<select class="b-mainDiscribeBooking__item">
+										<option value="no choice" disabled selected>Choose Vehicle</option>
+										<option class="b-mainDiscribeBooking__choice" value="any">Any</option>
+										<option class="b-mainDiscribeBooking__choice" value="BMW">BMW</option>
+										<option class="b-mainDiscribeBooking__choice" value="Mercedes">Mercedes</option>
+										<option class="b-mainDiscribeBooking__choice" value="Toyota">Toyota</option>
+										<option class="b-mainDiscribeBooking__choice" value="Ford">Ford</option>
+										<option class="b-mainDiscribeBooking__choice" value="Buick">Buick</option>
+									</select>
+									<input class="b-mainDiscribeBooking__btn" type="submit" value="Submit">
+								</form>
+							</div>
+						</div>
+						
 					</div>
-				</section>
-			
+				
+				</div>
+			</section>
+			<section class="b-mainTariffs">
+				<div class="container b-mainTariffsContainer"></div>
+			</section>
 		</main>
 
 		<footer class="footer">
