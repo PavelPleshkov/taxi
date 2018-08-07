@@ -35,6 +35,9 @@ a:hover {
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  box-shadow: 0 12px 20px 0 #000;
+  position: relative;
+  z-index: 3;
 }
 
 .headerContainer {
@@ -186,7 +189,6 @@ a:hover {
 
 .b-headerMenuList__item:hover {
   color: #ffc61a;
-  border: 1px solid #ffc61a;
   transition: .3s;
 }
 
@@ -242,6 +244,7 @@ a:hover {
 
 .header .pos-f-t .navbar {
   justify-content: flex-end;
+  padding: 10px 20px;
 }
 
 .header .pos-f-t .navbar-dark .navbar-toggler {
@@ -277,7 +280,7 @@ a:hover {
   justify-content: flex-end;
   flex-wrap: wrap;
   align-items: flex-end;
-  padding: 1.5rem 1rem !important;
+  padding: 20px !important;
 }
 
 .b-headerBooking {
@@ -301,7 +304,7 @@ a:hover {
 
 @media (max-width: 575px) {
   .b-headerBooking_center {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -420,7 +423,7 @@ a:hover {
 .b-headerBooking__image_center {
   margin-bottom: -115px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .main {
@@ -437,18 +440,14 @@ a:hover {
 
 @media (max-width: 991px) {
   .b-mainDiscribeContainer_size_md {
-    padding: 160px 20px 30px;
+    padding: 160px 20px 40px;
   }
 }
 
 @media (max-width: 575px) {
   .b-mainDiscribeContainer_size_xs {
-    padding-top: 30px;
+    padding: 50px 20px 30px;
   }
-}
-
-.b-mainDiscribeContainer .row {
-  margin: 0;
 }
 
 @media (max-width: 575px) {
@@ -532,17 +531,39 @@ a:hover {
   text-align: center;
   padding: 12px 35px;
   box-shadow: 5px 5px 40px 0 #000;
+  transition: .3s;
 }
 
 .b-mainDiscribeInfo__btn:hover {
-  color: #ffc61a;
+  color: #6ae9ff;
   transition: .3s;
+  box-shadow: 5px 5px 40px 4px #000;
 }
 
 .b-mainDiscribeInfo__btn:active {
   box-shadow: 5px 5px 25px 0 #000;
   transform: scale(0.95, 0.95);
   transition: 0s;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 991px) {
+  .b-mainDiscribeInfo__btn_size_md {
+    float: right;
+  }
+  .b-mainDiscribeInfo__btn_size_md::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainDiscribeInfo__btn_size_xs {
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .b-mainDiscribeBooking {
@@ -551,8 +572,15 @@ a:hover {
   border-radius: 20px;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .b-mainDiscribeBooking_size_md {
+    margin: 50px auto 0;
+    width: 90%;
+  }
+}
+
+@media (max-width: 767px) {
+  .b-mainDiscribeBooking_size_sm {
     margin-top: 50px;
   }
 }
@@ -684,11 +712,13 @@ a:hover {
   box-shadow: 5px 5px 40px 0 #000;
   transition: .3s;
   outline: none;
+  border-width: 0;
 }
 
 .b-mainDiscribeBooking__btn:hover {
-  color: #ffc61a;
+  color: #6ae9ff;
   transition: .3s;
+  box-shadow: 5px 5px 40px 4px #000;
 }
 
 .b-mainDiscribeBooking__btn:active {
@@ -703,6 +733,234 @@ a:hover {
 
 .b-mainTariffsContainer {
   padding: 65px 30px;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffsContainer_size_md {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainTariffsContainer_size_xs {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainTariffsRow {
+    margin: 0;
+  }
+  .b-mainTariffsRow > .col,
+  .b-mainTariffsRow > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.b-mainTariffs__title {
+  color: rgba(0, 0, 0, 0.68);
+  font-size: 44px;
+  line-height: 32px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffs__title {
+    font-size: 35px;
+  }
+}
+
+.b-mainTariffs__title_top {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffs__title_top {
+    margin-bottom: 30px;
+  }
+}
+
+.b-mainTariffs__decorate {
+  display: block;
+  color: #ffc61a;
+  font-size: 35px;
+  line-height: 26px;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffs__decorate {
+    font-size: 26px;
+  }
+}
+
+.b-mainTariffs__decorate_top {
+  margin-bottom: 7px;
+}
+
+.b-mainTariffsItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f4f2;
+  width: 100%;
+  text-align: center;
+  padding: 0 10px 25px;
+  box-shadow: 5px 5px 40px 0 #000;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffsItem {
+    padding: 0 20px 25px;
+  }
+}
+
+.b-mainTariffsItem_bottom {
+  margin-top: 85px;
+}
+
+@media (max-width: 1200px) {
+  .b-mainTariffsItem_bottom {
+    margin-top: 60px;
+  }
+}
+
+.b-mainTariffsItem_primary {
+  background-color: #ffc61a;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffsItem_primary {
+    margin-top: 90px;
+    margin-bottom: 30px;
+  }
+}
+
+.b-mainTariffsItem__image {
+  width: 100%;
+  max-width: 300px;
+}
+
+.b-mainTariffsItem__image_top {
+  margin-top: -85px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1200px) {
+  .b-mainTariffsItem__image_top {
+    margin-top: -60px;
+  }
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffsItem__image_top {
+    margin-bottom: 20px;
+  }
+}
+
+.b-mainTariffsItem__title {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.68);
+  font-size: 30px;
+  font-weight: 900;
+  line-height: 26px;
+}
+
+.b-mainTariffsItem__title_top {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffsItem__title_top {
+    margin-bottom: 20px;
+  }
+}
+
+.b-mainTariffsItem__txt {
+  color: #100f0f;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.b-mainTariffsItem__txt_top {
+  margin-bottom: 35px;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffsItem__txt_top {
+    margin-bottom: 20px;
+  }
+}
+
+.b-mainTariffsItem__price {
+  color: #ffc61a;
+  font-size: 44px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 43px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffsItem__price {
+    font-size: 35px;
+  }
+}
+
+.b-mainTariffsItem__price_top {
+  margin-bottom: 35px;
+}
+
+@media (max-width: 991px) {
+  .b-mainTariffsItem__price_top {
+    margin-bottom: 20px;
+  }
+}
+
+.b-mainTariffsItem__price_primary {
+  color: #1b1b1b;
+}
+
+.b-mainTariffsItem__btn {
+  display: inline-block;
+  border-radius: 7px;
+  text-transform: uppercase;
+  color: #000;
+  background-color: #ffc61a;
+  font-size: 24px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  padding: 12px 35px;
+  box-shadow: 5px 5px 40px 0 #000;
+  transition: .3s;
+}
+
+.b-mainTariffsItem__btn:hover {
+  color: #fff;
+  transition: .3s;
+  box-shadow: 5px 5px 40px 4px #000;
+}
+
+.b-mainTariffsItem__btn:active {
+  box-shadow: 5px 5px 25px 0 #000;
+  transform: scale(0.95, 0.95);
+  transition: 0s;
+}
+
+.b-mainTariffsItem__btn_primary {
+  background-color: #1b1b1b;
+  color: #fff;
+}
+
+.b-mainTariffsItem__btn_primary:hover {
+  color: #6ae9ff;
 }
 
 .footer {

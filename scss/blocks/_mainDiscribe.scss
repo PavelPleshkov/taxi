@@ -3,25 +3,33 @@
 
 	&Container {
 		padding: 160px 30px 80px;
+		// box-shadow: 5px 12px 20px 0 #000;
+		// background-color: $mainColor;
+		// position: relative;
+		// z-index: 1;
+		// top: -10px;
 
 		&_size {
 			&_md {
 				@media (max-width: 991px) {
-					padding: 160px 20px 30px;
+					padding: 160px 20px 40px;
 				}
 			}
 
 			&_xs {
 				@media (max-width: 575px) {
-					padding-top: 30px;
+					padding: 50px 20px 30px;
 				}
 			}
 		}
 		
-		.row {
-			margin: 0;
-		}
+		// .row {
+		// 	margin: 0;
+		// }
 	}
+	// &Row {
+	// 	margin: 0;
+	// }
 
 	&Info {
 
@@ -110,17 +118,59 @@
 			text-align: center;
 			padding: 12px 35px;
 			box-shadow: 5px 5px 40px 0 #000;
+			// border: 3px solid transparent;
+			// border: 1px solid rgb(151, 143, 28);
+			// border-top-color: $mainColor;
+			// border-left-color: $mainColor;
 			// font-stretch: condensed;
+			transition: .3s;
 
 			&:hover {
-				color: $mainColor;
+				// color: $mainColor;
+				color: #6ae9ff;
+				// text-shadow: 2px 1px 1px $mainColor;
 				transition: .3s;
+				box-shadow: 5px 5px 40px 4px #000;
+				// border: 2px solid #ccc;
+				// border-top-color: #555;
+				// border-left-color: #555;
+				// border: 1px solid transparent;
 			}
 
 			&:active {
 				box-shadow: 5px 5px 25px 0 #000;
 				transform: scale(0.95, 0.95);
 				transition: 0s;
+				// color: $mainColor;
+				background-color: rgba(0,0,0,0.8);
+				// border: 3px solid #ccc;
+				// border-top-color: #999;
+				// border-left-color: #999;
+				// border: 1px solid #777;
+				// border-top-color: #fff;
+				// border-left-color: #fff;
+			}
+
+			&_size {
+				&_md {
+					@media (max-width: 991px) {
+						float: right;
+						
+						&::after {
+							content:'';
+							display: block;
+							clear: both;
+						}
+					}
+				}
+
+				&_xs {
+					@media (max-width: 575px) {
+						float: none;
+						margin-left: auto;
+						margin-right: auto;
+					}
+				}
 			}
 		}
 	}
@@ -131,9 +181,19 @@
 		box-shadow: 5px 5px 40px 0 #000;
 		border-radius: 20px;
 
-		&_size_md {
-			@media (max-width: 991px) {
-				margin-top: 50px;
+		&_size {
+			&_md {
+				@media (min-width: 768px) and (max-width: 991px) {
+					margin: 50px auto 0;
+					width: 90%;
+				}
+			}
+
+			&_sm {
+				@media (max-width: 767px) {
+					margin-top: 50px;
+
+				}
 			}
 		}
 
@@ -305,10 +365,13 @@
 			box-shadow: 5px 5px 40px 0 #000;
 			transition: .3s;
 			outline: none;
+			border-width: 0;
 
 			&:hover {
-				color: $mainColor;
+				// color: $mainColor;
+				color: #6ae9ff;
 				transition: .3s;
+				box-shadow: 5px 5px 40px 4px #000;
 			}
 
 			&:active {
