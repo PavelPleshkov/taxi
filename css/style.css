@@ -953,7 +953,7 @@ a:hover {
     border-radius: 50%;
   }
   90% {
-    border: 5px solid transparent;
+    border: 5px solid #1b1b1b;
     background-color: #1b1b1b;
   }
   100% {
@@ -963,7 +963,7 @@ a:hover {
     transform: rotateZ(360deg) scale(0.7, 0.7);
     text-shadow: 0px 0px 0 #000;
     background-color: #fff;
-    border: 5px solid transparent;
+    border: 5px solid #fff;
     border-radius: 50%;
   }
 }
