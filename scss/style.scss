@@ -141,9 +141,12 @@ a {
 }
 
 @import "blocks/_mainDiscribe";
+
 @import "blocks/_mainTariffs";
+
+@import "blocks/_mainService";
 
 .footer {
 	height: 500px;
-	background-color: rgb(198, 204, 113);
+	// background-color: rgb(198, 204, 113);
 }
