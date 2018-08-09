@@ -862,12 +862,11 @@ a:hover {
   font-family: FontAwesome;
   color: #ffc61a;
   display: block;
-  border: 5px solid transparent;
   border-radius: 50%;
   box-sizing: border-box;
   font-size: 40px;
   line-height: 40px;
-  padding: 5px;
+  padding: 10px;
   position: absolute;
   right: 20px;
   bottom: 80px;
@@ -887,11 +886,9 @@ a:hover {
     transform: rotateZ(0deg) scale(0.7, 0.7);
     text-shadow: 0px 0px 0 #000;
     background-color: #fff;
-    border: 5px solid #fff;
     border-radius: 50%;
   }
   2% {
-    border: 5px solid transparent;
     border-radius: 50%;
     background-color: transparent;
   }
@@ -899,7 +896,6 @@ a:hover {
     z-index: 3;
     text-shadow: 0px 0px 50px #000;
     transform: rotateZ(36deg) scale(1.5, 1.5);
-    border: 5px solid transparent;
     border-radius: 50%;
   }
   17% {
@@ -945,16 +941,13 @@ a:hover {
     transform: rotateZ(360deg) scale(0.7, 0.7);
     text-shadow: 0px 0px 0 #000;
     background-color: transparent;
-    border: 5px solid transparent;
     border-radius: 50%;
   }
   80% {
     background-color: #1b1b1b;
-    border: 5px solid #1b1b1b;
     border-radius: 50%;
   }
   90% {
-    border: 5px solid #1b1b1b;
     background-color: #1b1b1b;
   }
   100% {
@@ -964,7 +957,6 @@ a:hover {
     transform: rotateZ(360deg) scale(0.7, 0.7);
     text-shadow: 0px 0px 0 #000;
     background-color: #fff;
-    border: 5px solid #fff;
     border-radius: 50%;
   }
 }
