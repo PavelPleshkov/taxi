@@ -864,9 +864,10 @@ a:hover {
   display: block;
   border: 5px solid transparent;
   border-radius: 50%;
+  box-sizing: border-box;
   font-size: 40px;
   line-height: 40px;
-  padding: 3px;
+  padding: 5px;
   position: absolute;
   right: 20px;
   bottom: 80px;
