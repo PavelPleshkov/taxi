@@ -862,6 +862,7 @@ a:hover {
   font-family: FontAwesome;
   color: #ffc61a;
   display: block;
+  border: 5px solid transparent;
   border-radius: 50%;
   font-size: 40px;
   line-height: 40px;
