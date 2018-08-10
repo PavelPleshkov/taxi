@@ -826,6 +826,12 @@ a:hover {
   }
 }
 
+@media (max-width: 575px) {
+  .b-mainTariffsItem_size_xs {
+    box-shadow: none;
+  }
+}
+
 .b-mainTariffsItem_bottom {
   margin-top: 85px;
 }
@@ -1493,14 +1499,22 @@ a:hover {
 
 @media (max-width: 991px) {
   .b-mainAppBox_size_md {
-    grid-template-columns: 1fr;
-    grid-row-gap: 50px;
+    grid-template-columns: 1fr 300px;
+    grid-column-gap: 50px;
   }
 }
 
 @media (max-width: 767px) {
   .b-mainAppBox_size_sm {
+    grid-template-columns: 100%;
+    grid-template-rows: auto minmax(200px, 300px);
     grid-row-gap: 40px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainAppBox_size_xs {
+    display: block;
   }
 }
 
@@ -1508,7 +1522,7 @@ a:hover {
   margin: 40px 0;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .b-mainAppItem {
     margin: 0;
   }
@@ -1562,7 +1576,7 @@ a:hover {
 }
 
 .b-mainApp__btn {
-  display: block;
+  display: inline-block;
   width: 210px;
   height: 65px;
   border-radius: 33px;
@@ -1579,9 +1593,13 @@ a:hover {
   background-image: url(../img/appBtnAppStore.png);
 }
 
-@media (min-width: 1200px) {
-  .b-mainApp__btn_left {
-    float: left;
+.b-mainApp__btn_left {
+  margin-right: 20px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .b-mainApp__btn_right {
+    float: right;
   }
 }
 
@@ -1591,9 +1609,15 @@ a:hover {
   }
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 575px) {
   .b-mainApp__btn_bottom {
     margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .b-mainApp__btn_bottom {
+    margin-top: 15px;
   }
 }
 
@@ -1615,6 +1639,21 @@ a:hover {
 
 .b-mainApp__image_bottom {
   margin-top: auto;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .b-mainApp__image {
+    width: auto;
+    height: 100%;
+    margin: 0 30px 0 auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainApp__image {
+    max-width: 80%;
+    margin: 20px auto 0;
+  }
 }
 
 .footer {
