@@ -149,13 +149,13 @@
 					background-color: #fff;
 				}
 				12% {
-					content: '\f118';
+					// content: '\f118';
 					transform: perspective(150px) rotateY(180deg);
 					background-color: #fff;
 				}
-				13% {
-					content: '\f118';
-				}
+				// 13% {
+				// 	content: '\f118';
+				// }
 				17% {
 					content: '\f118';
 					background-color: #fff;
@@ -187,22 +187,22 @@
 
 		&_pickup::before {
 			content: '\f006';
-			animation-delay: 1.5s;
+			animation-delay: 1.25s;
 		}
 
 		&_booking::before {
 			content: '\f253';
-			animation-delay: 3s;
+			animation-delay: 2.5s;
 		}
 
 		&_bonuses::before {
 			content: '\f0d0';
-			animation-delay: 4.5s;
+			animation-delay: 3.75s;
 		}
 
 		&_gps::before {
 			content: '\f041';
-			animation-delay: 6s;
+			animation-delay: 5s;
 		}
 
 		&:hover::before {

@@ -1251,12 +1251,8 @@ a:hover {
     background-color: #fff;
   }
   12% {
-    content: '\f118';
     transform: perspective(150px) rotateY(180deg);
     background-color: #fff;
-  }
-  13% {
-    content: '\f118';
   }
   17% {
     content: '\f118';
@@ -1290,22 +1286,22 @@ a:hover {
 
 .b-mainServiceItem_pickup::before {
   content: '\f006';
-  animation-delay: 1.5s;
+  animation-delay: 1.25s;
 }
 
 .b-mainServiceItem_booking::before {
   content: '\f253';
-  animation-delay: 3s;
+  animation-delay: 2.5s;
 }
 
 .b-mainServiceItem_bonuses::before {
   content: '\f0d0';
-  animation-delay: 4.5s;
+  animation-delay: 3.75s;
 }
 
 .b-mainServiceItem_gps::before {
   content: '\f041';
-  animation-delay: 6s;
+  animation-delay: 5s;
 }
 
 .b-mainServiceItem:hover::before {
