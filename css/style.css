@@ -924,9 +924,11 @@ a:hover {
     transform: perspective(50px) rotateY(270deg) rotateZ(216deg) scale(0.8, 0.8);
   }
   47% {
+    z-index: 4;
     transform: perspective(50px) rotateY(360deg) rotateZ(216deg) scale(0.8, 0.8);
   }
   50% {
+    z-index: 4;
     right: calc(50% - 132px);
     bottom: 18px;
     transform: perspective(50px) rotateY(405deg) rotateZ(216deg) scale(0.8, 0.8);
@@ -937,7 +939,7 @@ a:hover {
     transform: rotateZ(288deg) rotateX(180deg) scale(1.4, 1.4);
   }
   70% {
-    z-index: 4;
+    z-index: 1;
     right: 10px;
     bottom: 75px;
     transform: rotateZ(360deg) scale(0.7, 0.7);
