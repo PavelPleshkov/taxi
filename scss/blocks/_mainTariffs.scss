@@ -253,11 +253,12 @@
 						transform: perspective(50px) rotateY(405deg) rotateZ(216deg)  scale(.8, .8);
 					}
 					60% {
+						z-index: 4;
 						text-shadow: 0px 0px 50px #000;
 						transform: rotateZ(288deg) rotateX(180deg) scale(1.4, 1.4);
 					}
 					70% {
-						z-index: 4;
+						z-index: 1;
 						right: 10px;
 						bottom: 75px;
 						transform: rotateZ(360deg) scale(.7, .7);
