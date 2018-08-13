@@ -1074,7 +1074,7 @@ a:hover {
 }
 
 .b-mainTariffsItem__btn {
-  display: inline-block;
+  display: block;
   border-radius: 7px;
   text-transform: uppercase;
   color: #000;
@@ -1656,6 +1656,367 @@ a:hover {
   }
 }
 
+.b-mainReviews {
+  background-image: url(../img/reviewsBackground.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.b-mainReviewsContainer {
+  padding: 65px 30px;
+}
+
+@media (max-width: 991px) {
+  .b-mainReviewsContainer_size_md {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainReviewsContainer_size_xs {
+    padding: 20px 30px 40px;
+  }
+}
+
+.b-mainReviews__title {
+  color: #fff;
+  font-size: 44px;
+  line-height: 32px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 991px) {
+  .b-mainReviews__title_size_md {
+    font-size: 35px;
+  }
+}
+
+.b-mainReviews__title_top {
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1199px) {
+  .b-mainReviews__title_top {
+    margin-bottom: 70px;
+  }
+}
+
+@media (max-width: 991px) {
+  .b-mainReviews__title_top {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainReviews__title_top {
+    margin-bottom: 50px;
+  }
+}
+
+.b-mainReviews__decorate {
+  display: block;
+  color: #ffc61a;
+  font-size: 35px;
+  line-height: 26px;
+  font-weight: 900;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .b-mainReviews__decorate_size_md {
+    font-size: 26px;
+  }
+}
+
+.b-mainReviews__decorate_top {
+  margin-bottom: 7px;
+}
+
+.b-mainReviewsBox {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 35px;
+}
+
+@media (max-width: 991px) {
+  .b-mainReviewsBox_size_md {
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .b-mainReviewsBox_size_sm {
+    grid-row-gap: 40px;
+  }
+}
+
+.b-mainReviewsItem {
+  text-align: left;
+  background-color: #040707;
+  border-radius: 30px;
+  padding: 40px 50px;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .b-mainReviewsItem {
+    padding: 20px 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .b-mainReviewsItem::after {
+    content: '';
+    display: block;
+    border-right: 25px solid #040707;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    bottom: -24px;
+    left: 75px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainReviewsItem::after {
+    left: 50px;
+  }
+}
+
+@media (min-width: 992px) {
+  .b-mainReviewsItem:nth-child(odd)::after {
+    content: '';
+    display: block;
+    border-left: 25px solid #040707;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    bottom: -24px;
+    right: 75px;
+  }
+  .b-mainReviewsItem:nth-child(even)::after {
+    content: '';
+    display: block;
+    border-right: 25px solid #040707;
+    border-bottom: 25px solid transparent;
+    position: absolute;
+    bottom: -24px;
+    left: 75px;
+  }
+}
+
+.b-mainReviewsItem__title {
+  display: none;
+}
+
+.b-mainReviewsItem__txt {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.b-mainReviewsItem__txt_top {
+  margin-bottom: 25px;
+}
+
+.b-mainReviewsItem address {
+  margin: 0;
+}
+
+.b-mainReviewsItem__author {
+  display: inline-block;
+  color: #ffc61a;
+  transition: .3s;
+}
+
+.b-mainReviewsItem__author:hover {
+  color: #fff;
+  transition: .3s;
+}
+
+.b-mainReviewsItem__author:hover .b-mainReviewsItem__image {
+  transition: .3s;
+  box-shadow: 0 0 25px 0 #fff;
+}
+
+.b-mainReviewsItem__author::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.b-mainReviewsItem__image {
+  display: block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  float: left;
+}
+
+@media (max-width: 575px) {
+  .b-mainReviewsItem__image {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.b-mainReviewsItem__name {
+  display: block;
+  float: left;
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: left;
+  line-height: 18px;
+}
+
+@media (max-width: 575px) {
+  .b-mainReviewsItem__name {
+    font-size: 20px;
+  }
+}
+
+.b-mainReviewsItem__name_right {
+  margin: 15px 0 0 18px;
+}
+
+@media (max-width: 575px) {
+  .b-mainReviewsItem__name_right {
+    margin: 5px 0 0 12px;
+  }
+}
+
+.b-mainReviewsItem__profession {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  line-height: 14px;
+}
+
+@media (max-width: 575px) {
+  .b-mainReviewsItem__profession {
+    font-size: 16px;
+  }
+}
+
+.b-mainReviewsItem__profession_bottom {
+  margin-top: 15px;
+}
+
+@media (max-width: 575px) {
+  .b-mainReviewsItem__profession_bottom {
+    margin-top: 8px;
+  }
+}
+
+.b-mainCall {
+  background-color: #ffc61a;
+}
+
+.b-mainCallContainer {
+  padding: 65px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+  .b-mainCallContainer_size_md {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainCallContainer_size_xs {
+    padding: 20px 30px;
+  }
+}
+
+.b-mainCall__txt {
+  color: rgba(0, 0, 0, 0.68);
+  font-size: 35px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 30px;
+}
+
+@media (max-width: 991px) {
+  .b-mainCall__txt {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainCall__txt {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+
+.b-mainCall__phone {
+  display: block;
+  color: rgba(0, 0, 0, 0.68);
+  font-size: 76px;
+  font-weight: 900;
+  text-align: center;
+  line-height: 60px;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+@media (max-width: 991px) {
+  .b-mainCall__phone {
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .b-mainCall__phone {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+.b-mainCall__phone:hover {
+  color: #fff;
+}
+
+.b-mainCall__phone_center {
+  margin: 0 auto;
+}
+
+.b-mainCall__phone_bottom {
+  margin-top: 30px;
+}
+
 .footer {
-  height: 200px;
+  background-image: url(../img/footerBackground.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.footerContainer {
+  padding: 65px 30px;
+}
+
+@media (max-width: 991px) {
+  .footerContainer {
+    padding: 40px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .footerContainer {
+    padding: 20px 30px;
+  }
+}
+
+.b-footerMain {
+  background-color: #ffc61a;
 }

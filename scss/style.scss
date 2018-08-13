@@ -148,7 +148,28 @@ a {
 
 @import "blocks/_mainApp";
 
+@import "blocks/_mainReviews";
+
+@import "blocks/_mainCall";
+
+
 .footer {
-	height: 200px;
-	// background-color: rgb(198, 204, 113);
+	background-image:url(../img/footerBackground.jpg);
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+
+	&Container {
+		padding: 65px 30px;
+
+		@media (max-width: 991px) {
+			padding: 40px 20px;
+		}
+
+		@media (max-width: 575px) {
+			padding: 20px 30px;
+		}
+	}
 }
+
+@import "blocks/_footerMain";
