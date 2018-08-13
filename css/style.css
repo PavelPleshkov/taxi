@@ -1706,13 +1706,13 @@ a:hover {
 
 @media (max-width: 991px) {
   .b-mainReviews__title_top {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 }
 
 @media (max-width: 575px) {
   .b-mainReviews__title_top {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
