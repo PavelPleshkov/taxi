@@ -194,6 +194,13 @@
 				}
 			}
 
+			&:active {
+				.b-mainReviewsItem__image {
+					box-shadow: 0 0 15px 0 #fff;
+					transition: 0s;
+				}
+			}
+
 			&::after {
 				content: '';
 				display: block;
@@ -207,6 +214,7 @@
 			height: 75px;
 			border-radius: 50%;
 			float: left;
+			transition: .3s;
 
 			@media (max-width: 575px) {
 				width: 50px;

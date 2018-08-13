@@ -1,6 +1,7 @@
 $mainFont: 'Lato', sans-serif;
 $mainColor: #ffc61a;
 
+
 *, p, h1, h2, h3, h4, h5, h6 {
 	margin: 0;
 	padding: 0;
@@ -25,7 +26,6 @@ a {
 }
 
 .container-fluid {
-	// background-color: rgb(204, 97, 97);
 	height: 100%;
 	display: grid;
 	grid-template-columns: 100%;
@@ -154,22 +154,31 @@ a {
 
 
 .footer {
-	background-image:url(../img/footerBackground.jpg);
+	background: rgba(41, 18, 8, 0.5) url(../img/footerBackground.jpg);
+	background-blend-mode: hard-light;
 	background-size: cover;
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 
 	&Container {
-		padding: 65px 30px;
+		padding: 75px 30px 0;
 
-		@media (max-width: 991px) {
-			padding: 40px 20px;
-		}
+		&_size {
+			&_md {
+				@media (max-width: 991px) {
+					padding: 40px 20px 0;
+				}
+			}
 
-		@media (max-width: 575px) {
-			padding: 20px 30px;
+			&_xs {
+				@media (max-width: 575px) {
+					padding: 20px 30px 0;
+				}
+			}
 		}
 	}
 }
 
 @import "blocks/_footerMain";
+
+@import "blocks/_footerCopyrights";
