@@ -2034,6 +2034,18 @@ a:hover {
   }
 }
 
+@media (max-width: 575px) {
+  .b-mainUp__btn_size_xs {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0;
+    text-align: right;
+    padding: 15px 10px;
+    transition: .3s;
+  }
+}
+
 .b-mainUp__btn:hover {
   color: #fff;
   opacity: .8;
@@ -2048,10 +2060,24 @@ a:hover {
   }
 }
 
+@media (max-width: 575px) {
+  .b-mainUp__btn:hover {
+    opacity: .4;
+    color: inherit;
+    padding: 15px 10px;
+  }
+}
+
 .b-mainUp__btn:active {
   transform: scale(0.9, 0.9);
   color: #ffc61a;
   transition: .3s;
+}
+
+@media (max-width: 575px) {
+  .b-mainUp__btn:active {
+    transform: scale(1, 1);
+  }
 }
 
 .footer {
@@ -2338,6 +2364,12 @@ a:hover {
   font-weight: 400;
   line-height: 14px;
   padding: 20px 0;
+}
+
+@media (max-width: 575px) {
+  .b-footerCopyrights_size_xs {
+    padding-bottom: 72px;
+  }
 }
 
 .b-footerCopyrights__link:hover {

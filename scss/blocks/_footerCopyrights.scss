@@ -5,10 +5,12 @@
 	font-weight: 400;
 	line-height: 14px;
 	padding: 20px 0;
-	
-	// &__txt {
-	// 	margin: 20px 0;
-	// }
+
+	&_size_xs {
+		@media (max-width: 575px) {
+			padding-bottom: 72px;
+		}
+	}
 
 	&__link:hover {
 		color: $mainColor;
