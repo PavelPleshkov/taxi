@@ -2001,6 +2001,38 @@ a:hover {
   margin-top: 30px;
 }
 
+.b-mainUp__btn {
+  display: block;
+  background-color: #777;
+  opacity: 0.4;
+  border: 1px solid #333;
+  border-right-width: 0;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  position: fixed;
+  right: -60px;
+  top: 50%;
+  color: #ffc61a;
+  font-size: 30px;
+  line-height: 20px;
+  padding: 20px 30px;
+  transition: 1.3s;
+}
+
+.b-mainUp__btn:hover {
+  color: #fff;
+  opacity: .8;
+  padding: 20px 30px 20px 10px;
+  right: -10px;
+  transition: .3s;
+}
+
+.b-mainUp__btn:active {
+  transform: scale(0.9, 0.9);
+  color: #ffc61a;
+  transition: .3s;
+}
+
 .footer {
   background: rgba(41, 18, 8, 0.5) url(../img/footerBackground.jpg);
   background-blend-mode: hard-light;
