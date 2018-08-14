@@ -12,15 +12,34 @@
 		border-bottom-left-radius: 10px;
 		position: fixed;
 		// right: 10px;
-		right: -60px;
+		// right: -60px;
 		// bottom: 20px;
-		top: 50%;
+		// top: 50%;
 		color: $mainColor;
 		font-size: 30px;
 		line-height: 20px;
 		// margin: 0 auto;
 		padding: 20px 30px;
 		transition: 1.3s;
+		z-index: 2;
+
+		&_size {
+			&_md {
+				@media (min-width: 768px) {
+					top: 50%;
+					right: -60px;
+				}
+			}
+			&_sm {
+				@media (max-width: 767px) {
+					// top: 100%;
+					opacity: .3;
+					bottom: 0;
+					right: -10px;
+					padding-left: 10px;
+				}
+			}
+		}
 
 		&:hover {
 			color: #fff;
@@ -28,9 +47,10 @@
 			padding: 20px 30px 20px 10px;
 			right: -10px;
 			transition: .3s;
-			// background-color: #777;
 
-			// background-color: transparent;
+			@media (max-width: 767px) {
+				opacity: .5;
+			}
 		}
 
 		&:active {

@@ -2010,13 +2010,28 @@ a:hover {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   position: fixed;
-  right: -60px;
-  top: 50%;
   color: #ffc61a;
   font-size: 30px;
   line-height: 20px;
   padding: 20px 30px;
   transition: 1.3s;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  .b-mainUp__btn_size_md {
+    top: 50%;
+    right: -60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .b-mainUp__btn_size_sm {
+    opacity: .3;
+    bottom: 0;
+    right: -10px;
+    padding-left: 10px;
+  }
 }
 
 .b-mainUp__btn:hover {
@@ -2025,6 +2040,12 @@ a:hover {
   padding: 20px 30px 20px 10px;
   right: -10px;
   transition: .3s;
+}
+
+@media (max-width: 767px) {
+  .b-mainUp__btn:hover {
+    opacity: .5;
+  }
 }
 
 .b-mainUp__btn:active {
