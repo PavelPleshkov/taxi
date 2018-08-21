@@ -1943,7 +1943,7 @@ a:hover {
   }
 }
 
-.b-mainCall__txt {
+.b-mainCall__title {
   color: rgba(0, 0, 0, 0.68);
   font-size: 35px;
   font-weight: 900;
@@ -1952,13 +1952,13 @@ a:hover {
 }
 
 @media (max-width: 991px) {
-  .b-mainCall__txt {
+  .b-mainCall__title {
     font-size: 26px;
   }
 }
 
 @media (max-width: 575px) {
-  .b-mainCall__txt {
+  .b-mainCall__title {
     font-size: 22px;
     line-height: 24px;
   }
